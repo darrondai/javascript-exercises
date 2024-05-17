@@ -18,7 +18,14 @@ const power = function (base, exponent) {
   return base ** exponent;
 };
 
-const factorial = function () {};
+const factorial = function (num) {
+  let total = 1;
+  while (num > 0) {
+    total *= num;
+    num--;
+  }
+  return total;
+};
 
 // Do not edit below this line
 module.exports = {
